@@ -6,15 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Cat</title>
 </head>
-    <script>
-        function changeText() {
-            document.getElementById("content").innerHTML = 'My name is' + document.getElementById('myText').value;
-        }
-        function onAlertMyText (text) {
-            var mergeText = text + document.getElementById('myText').value;
-            alert(mergeText);
-        }
-    </script>
+   
     <body style="text-align:center; background-color:lightskyblue">
     <h1>
         <style>
@@ -28,5 +20,14 @@
     Enter Kitty: <input type="text" id="myText"></input>
     <button onclick='onAlertMyText("Hello.")'>OK</button>
     <button onclick="changeText('Hello.')">Change Text</button>
+    <script>
+        function changeText() {
+            document.getElementById("content").innerHTML = 'My name is' + document.getElementById('myText').value;
+        }
+        function onAlertMyText (text) {
+            var mergeText = text + document.getElementById('myText').value;
+            alert(mergeText);
+        }
+    </script>
 </body>
 </html>
